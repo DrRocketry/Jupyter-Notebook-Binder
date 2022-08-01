@@ -1,0 +1,9 @@
+#!/bin/bash
+
+jupyter serverextension enable --py nbgitpuller --sys-prefix
+jupyter labextension install jupyterlab-jupytext@0.19
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension install --user --py jupytext
+jupyter nbextension enable --py jupytext
+#jupyter lab clean
